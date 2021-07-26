@@ -42,7 +42,8 @@ class Lb {
 				$controller = new $this->default_controller;
 				$method = $this->default_view."Action";
 				if(method_exists($controller, $method)){
-					$data = call_user_method($method, $controller);
+					$data = call_user_func(array($controller, $method ));
+					//$data = call_user_method($method, $controller);
 				}else{
 					echo "<b>".$method."</b> not found in ".$this->default_controller;
 				}
