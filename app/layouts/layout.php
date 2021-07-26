@@ -28,7 +28,7 @@ $meta = $data["meta"];
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="./">BIJCHUC</a>
+      <a class="navbar-brand" href="./">Sistema de inicio de sesion</a>
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
@@ -38,7 +38,9 @@ $meta = $data["meta"];
           <li><a href="./"><i class="glyphicon glyphicon-user"></i> <?php echo $user->name; ?></a></li>
           <li><a href="./?r=index/processlogout"><i class="glyphicon glyphicon-off"></i> Salir</a></li>
         <?php else:?>
-          <li><a href="./?r=index/login">Inicio</a></li>
+          <li><a href="./">Inicio</a></li>
+          <li><a href="./?r=index/register">Registro</a></li>
+          <li><a href="./?r=index/login">Login</a></li>
           <li><a href="./?r=index/recover">Recuperar</a></li>
 
           <?php endif;?>
